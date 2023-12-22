@@ -1,0 +1,128 @@
+/* universal  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: 
+    linear-gradient(black,transparent),
+     url(landing1.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: white;
+}
+
+
+.navbar ul{
+    list-style: none; 
+}
+
+.navbar ul li{
+    margin-top: 150px;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.navbar ul li a{
+    
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    text-decoration: underline;
+    font-size:larger;
+    font-weight: 400;
+}
+
+.navbar ul li a:hover{
+    border: 2px solid white;
+}
+
+.hero-text{
+    color: white;  
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    animation: slide 1s ease-in-out;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0%);
+
+    }
+    
+}
+
+.hero-text a{
+    color: white; 
+    background: #7c26cdc6; 
+    font-weight: 900;
+    padding: 0.8rem 1rem ;
+    font-size: medium;
+    margin: 0.8rem auto;
+    display: block;
+    transition: opacity 250ms linear;
+}
+
+.hero-text a:hover{
+    opacity:0.8;
+}
+
+.hero-text h2{
+    font-size: calc(1rem + 3vw);
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+}
+
+/* .contact{
+    width: 150px;
+    
+    
+} */
+
+/* images */
+img{
+    width: 40px;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    margin:0px;
+}
+
+.contact{
+    margin-left: 20px;
+    color: white;
+}
